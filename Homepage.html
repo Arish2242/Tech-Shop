@@ -318,15 +318,48 @@
             text-align:center;
             color: lightgray;
             border: 2px solid gray;
+            margin: 5px;
+            /* align-self: center; */
+            /* justify-self: center; */
         }
-        .b4lastaside,.fa-arrow-right{
+        /* .b4lastaside,.fa-arrow-right{
             position:relative;
-            top:280px; 
+            /* top:270px;  */
+            /* justify-self: center; */
+            /* place-self: center; */
+        /* } */ 
+        .b4divlastsub{
+            text-align: center;
+            /* justify-self: center; */
+            /* place-self: center; */
         }
-
-
-
-
+        .heading4{
+            text-align: center;
+            font-size: 35px;
+            color:lightgray;
+        }
+        .AdvantagesDiv{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-items: center;
+        }
+        .truckdiv{
+            display: flex;
+        }
+        .fa-truck,.fa-shield-halved,.fa-tags,.fa-credit-card{
+            color: red;
+            font-size: 33px;
+            margin:10px 20px 10px 10px;
+        }
+        .OAiconheading{
+            font-size: 23px;
+            color:lightgray
+        }
+        .OAIconContent{
+            font-size:18px;
+            color:rgb(113, 116, 106);
+        }
+        
     </style>
 </head>
 <body>
@@ -500,7 +533,7 @@
                 </div>
                 <br>
                 <div class="TPCartDiv1">
-                    <button class="TPCart1">Add to cart</button>
+                    <button type="submit" class="TPCart1">Add to cart</button>
                 </div>
             </div>
             
@@ -790,11 +823,52 @@
                </div> 
              </div> 
         </div>
-        <div class="b4divlast">    
-           <aside class="b4lastaside">Browse All Products</aside>
-           <i class="fa-solid fa-arrow-right"></i>
+        <div class="b4divlast">
+            <div class="b4divlastsub">
+                <aside class="b4lastaside">Browse All Products</aside>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>    
+           
         </div>
     </div>
+    <br><br><br><br><br><br>
+    <div class="body5">
+        <h2 class="heading4">Our Advantages</h2>
+        <br><br><br><br><br>
+        <div class="AdvantagesDiv">
+            <div class="truckdiv">
+                <i class="fa-solid fa-truck"></i>
+                <div class="truckcontent">
+                <aside class="OAiconheading"> Express Delivery</aside>
+                <article class="OAIconContent">ships in 24 Hours</article>   
+                </div>
+            </div> 
+            <div class="truckdiv">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div class="truckcontent">
+                <aside class="OAiconheading"> Brand Warranty</aside>
+                <article class="OAIconContent">100% Original products</article>   
+                </div>
+            </div>
+            <div class="truckdiv">
+                <i class="fa-solid fa-tags"></i>
+                <div class="truckcontent">
+                <aside class="OAiconheading"> Exciting Deals</aside>
+                <article class="OAIconContent">On all prepaid orders</article>   
+                </div>
+            </div>
+            <div class="truckdiv">
+                <i class="fa-solid fa-credit-card"></i>
+                <div class="truckcontent">
+                <aside class="OAiconheading"> Secure Payments</aside>
+                <article class="OAIconContent">SSL/Secure certificate</article>   
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <script src="https://kit.fontawesome.com/1f94d33050.js" crossorigin="anonymous">
     </script>
