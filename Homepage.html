@@ -28,17 +28,20 @@
         .search{
             position:relative;
             left:90px;
-            font-size: 20px;    
+            font-size: 20px;  
+            height: 20px;  
         }
         .cart{
             position: relative;
             left: 140px;
             font-size: 20px;
+            height: 20px;
         }
         .user{
             position: relative;
             left: 190px;
             font-size: 20px;
+            height: 20px;
         }
          .hide1{
             visibility:hidden;
@@ -227,6 +230,30 @@
             color:rgb(113, 116, 106);
             font-weight: bold;
         }
+        .heading3{
+            text-align: center;
+            margin: 75px;
+            color:lightgrey;
+        }
+        .TPdiv{
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            justify-items: center;
+        }
+        .TPbutton1,.TPbutton2,.TPbutton3,.TPbutton4,.TPbutton5{
+            border:none;
+            color: lightgrey;
+            font-size: 20px;
+            /* height:30px;
+            width:45px; */
+        }
+        .TPbutton1:hover,.TPbutton2:hover,.TPbutton3:hover,.TPbutton4:hover,.TPbutton5:hover{ 
+            background-color: orangered;
+            color:white;
+            transition-delay:5ms;
+            border-radius:2px;
+            padding:5px 10px 5px 10px;
+        }
 
 
     </style>
@@ -283,6 +310,7 @@
                 <img class="TSimage1" src="./images/products/boat131-3.png" alt="img1">  
         </div>
     </div>
+    <br><br><br><br><br><br>
     <div class="body2">
         <h2 class="heading2">Featured Products</h2>
         <div class="body2flex">
@@ -347,6 +375,28 @@
             </div>
           </div>
         </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="body3">
+        <h1 class="heading3">Top Products</h1>
+        <div class="TPdiv">
+            <div class="TP1"> 
+                <button class="TPbutton1">All</button>
+             </div>
+             <div class="TP2"> 
+                 <button class="TPbutton2">Headphones</button>
+             </div>
+             <div class="TP3"> 
+                 <button class="TPbutton3">Earbuds</button>
+             </div>
+             <div class="TP4">
+                 <button class="TPbutton4">Earphones</button>
+              </div>
+             <div class="TP5"> 
+                 <button class="TPbutton5">Neckbands</button>
+             </div>
+        </div>
+        
     </div>
 
 
