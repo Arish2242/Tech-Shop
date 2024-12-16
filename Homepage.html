@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech_Shop_Homepage</title>
-    <script src="https://kit.fontawesome.com/1f94d33050.js" crossorigin="anonymous">
-    </script>
+    
     <style>
         *{
             background-color: rgb(31, 26, 26);
@@ -45,17 +44,15 @@
         }
          .hide1{
             visibility:hidden;
-            position: relative;
-            top: 25px;
+            position: absolute;
+            top: 21px;
             z-index: 1000;
-            left: 0px;   
+            right: 0px;
+            width: 223px;   
         }
-        .user:hover + .hide1 {
-            .hide1:hover{
-                visibility: visible;
-            }
-                visibility:visible;
-                color:red;  
+        .user:hover  .hide1 {
+            opacity: 1;
+            visibility: visible; 
         } 
         .body1{
             color:lightgrey;
@@ -244,16 +241,90 @@
             border:none;
             color: lightgrey;
             font-size: 20px;
-            /* height:30px;
-            width:45px; */
         }
         .TPbutton1:hover,.TPbutton2:hover,.TPbutton3:hover,.TPbutton4:hover,.TPbutton5:hover{ 
-            background-color: orangered;
+            background-color:red;
             color:white;
             transition-delay:5ms;
             border-radius:2px;
             padding:5px 10px 5px 10px;
         }
+        .body4{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .TPimg1{
+            height:200px;
+            width:200px;
+            background-color: rgba(61, 58, 56, 0.171);
+        }
+        .b4div1{
+            border: 2px solid gray;
+            margin:5px;
+            padding:5px;
+            /* justify-self: center; */
+            
+        }
+        .TPimgdiv{
+            text-align: center;
+            width:305px;
+            background-color: rgba(219, 207, 199, 0.171);
+        }
+        .fa-star{
+            color:red;
+            font-size: 12px;
+        }
+        .TP1pricediv{
+            display: flex;
+        }
+        .TP1discountprice{
+            margin:7px 5px 7px 7px;
+            font-size: 25px;
+            color:lightgray
+        }
+        .TP1price{
+            font-size: 20px;
+            margin:9px 8px 8px 5px;
+            text-decoration: line-through;
+            color:rgb(113, 116, 106);
+            font-weight: bold;
+        }
+        .TP1heading{
+            font-size: 30px;
+            color: lightgray;
+        }
+        .TP1aside{
+            color:rgb(113, 116, 106);
+            font-size: 25px;
+        }
+        .TPCart1{
+            color: lightgray;
+            background-color: red;
+            padding: 5px;
+            width: 271px;
+            border-radius: 5px;
+            border: none;
+            height: 40px;
+            font-size: 20px;
+        }
+        .TPCartDiv1{
+             text-align: center;
+        }
+        .TPcontentdiv{
+            margin:15px;
+        }
+        .b4divlast{
+            font-size: 30px;
+            text-align:center;
+            color: lightgray;
+            border: 2px solid gray;
+        }
+        .b4lastaside,.fa-arrow-right{
+            position:relative;
+            top:280px; 
+        }
+
+
 
 
     </style>
@@ -272,14 +343,18 @@
             </div>
             <div class="user">  
                 <i class="fa-regular fa-user"></i> 
+                <div class="hide1">
+                    <form>
+                       <h3>Hello!</h3>
+                       <article>Access account and manage orders.</article><br>
+                       <button class="signupbutton">Login/Signup</button>
+                       <hr>
+                       <aside>Please Login</aside>
+                    </form>
+                </div>
             </div>
-            <div class="hide1">
-                <h3>Hello!</h3>
-                <article>Access account and manage orders.</article><br>
-                <button class="signupbutton">Login/Signup</button>
-                <hr>
-                <aside>Please Login</aside>
-            </div>
+            
+
             
         </div>          
     </div>
@@ -398,7 +473,330 @@
         </div>
         
     </div>
+    <br><br><br><br>
+    <div class="body4">
+        <div class="b4div1">
+            <div class="TPimgdiv" >
+                <img class="TPimg1" src="./images/products/jbl660nc-1.png">
+            </div><br>
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+                <h2 class="TP1heading">JBL Live 660NC</h2>
+                <aside class="TP1aside">Wireless Over-Ear NC Headphones</aside>
+                <br>
+                <hr>
+                <div class="TP1pricediv">
+                    <div class="TP1discountprice">
+                        ₹9,999  
+                    </div>
+                    <div class="TP1price">
+                        ₹14,999
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv">
+                <img class="TPimg1" src="./images/products/boat518-1.png">
+            </div> <br>
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+                <h2 class="TP1heading">boAt Rockerz 518</h2>
+                <aside class="TP1aside">On-Ear Wireless Headphones</aside>
+                <br>
+                <hr>
+                <div class="TP1pricediv">
+                   <div class="TP1discountprice">
+                      ₹1,299  
+                   </div>
+                   <div class="TP1price">
+                       ₹3,990
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv"> 
+                <img class="TPimg1" src="./images/products/boat131-1.png">
+             </div> <br>
+             <div class="TPcontentdiv"> 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+               <h2 class="TP1heading">boAt Airdopes 131</h2>
+               <aside class="TP1aside">Wireless In-Ear Earbuds</aside>
+               <br><br>
+               <hr>
+               <div class="TP1pricediv">
+                   <div class="TP1discountprice">
+                       ₹1,099  
+                   </div>
+                   <div class="TP1price">
+                       ₹2,990
+                   </div>
+               </div>
+               <br>
+               <div class="TPCartDiv1">
+                   <button class="TPCart1">Add to cart</button>
+               </div> 
+             </div> 
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv">
+                <img class="TPimg1" src="./images/products/boat110-1.png">
+            </div><br> 
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i> 
+                <br>
+                <h2 class="TP1heading">boAt BassHeads 110</h2>
+                <aside class="TP1aside">In-Ear Wired Earphones</aside>
+                <br><br>
+                <hr>
+                <div class="TP1pricediv">
+                    <div class="TP1discountprice">
+                        ₹499  
+                    </div>
+                    <div class="TP1price">
+                        ₹999
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>  
+            </div>
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv" >
+                <img class="TPimg1" src="./images/products/boat410-1.png">
+            </div><br>
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+                <h2 class="TP1heading">boAt Rockerz 410</h2>
+                <aside class="TP1aside">Bluetooth & Wired On-Ear Headphones</aside>
+                <br>
+                <hr>
+                <div class="TP1pricediv">
+                    <div class="TP1discountprice">
+                        ₹1,599  
+                    </div>
+                    <div class="TP1price">
+                        ₹2,990
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv">
+                <img class="TPimg1" src="./images/products/jbl200bt-1.png">
+            </div> <br>
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+                <h2 class="TP1heading">JBL Live 200BT</h2>
+                <aside class="TP1aside">In-Ear Wireless  , Neckbands</aside>
+                <br>
+                <hr>
+                <div class="TP1pricediv">
+                   <div class="TP1discountprice">
+                      ₹3,699  
+                   </div>
+                   <div class="TP1price">
+                       ₹5,299
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv"> 
+                <img class="TPimg1" src="./images/products/sonyXb910n-1.png">
+             </div> <br>
+             <div class="TPcontentdiv"> 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+               <h2 class="TP1heading">Sony WH-XB910N</h2>
+               <aside class="TP1aside">Wireless Over-Ear Headphones</aside>
+               <br>
+               <hr>
+               <div class="TP1pricediv">
+                   <div class="TP1discountprice">
+                       ₹13,489  
+                   </div>
+                   <div class="TP1price">
+                       ₹19,990
+                   </div>
+               </div>
+               <br>
+               <div class="TPCartDiv1">
+                   <button class="TPCart1">Add to cart</button>
+               </div> 
+             </div> 
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv">
+                <img class="TPimg1" src="./images/products/jbl760nc-1.png">
+            </div><br> 
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i> 
+                <br>
+                <h2 class="TP1heading">JBL Tune 760NC</h2>
+                <aside class="TP1aside">Wireless Over-Ear NC Headphones</aside>
+                <br>
+                <hr>
+                <div class="TP1pricediv">
+                    <div class="TP1discountprice">
+                        ₹5,999  
+                    </div>
+                    <div class="TP1price">
+                        ₹7,999
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>  
+            </div>
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv" >
+                <img class="TPimg1" src="./images/products/boat255r-1.png">
+            </div><br>
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+                <h2 class="TP1heading">boAt Rockerz 255</h2>
+                <aside class="TP1aside">In-Ear Wireless Neckbands</aside>
+                <br><br>
+                <hr>
+                <div class="TP1pricediv">
+                    <div class="TP1discountprice">
+                        ₹899  
+                    </div>
+                    <div class="TP1price">
+                        ₹2,990
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv">
+                <img class="TPimg1" src="./images/products/jbl100-1.png">
+            </div> <br>
+            <div class="TPcontentdiv">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br><br>
+                <h2 class="TP1heading">JBL Wave 100</h2>
+                <aside class="TP1aside">In-Ear Wireless Earbuds</aside>
+                <br>
+                <hr>
+                <div class="TP1pricediv">
+                   <div class="TP1discountprice">
+                      ₹2,999  
+                   </div>
+                   <div class="TP1price">
+                       ₹6,999
+                    </div>
+                </div>
+                <br>
+                <div class="TPCartDiv1">
+                    <button class="TPCart1">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="b4div1">
+            <div class="TPimgdiv"> 
+                <img class="TPimg1" src="./images/products/sony1000xm4-1.png">
+             </div> <br>
+             <div class="TPcontentdiv"> 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <br>
+               <h2 class="TP1heading">Sony WF-1000XM4</h2>
+               <aside class="TP1aside">Wireless In-Ear Headphones</aside>
+               <br>
+               <hr>
+               <div class="TP1pricediv">
+                   <div class="TP1discountprice">
+                       ₹19,990  
+                   </div>
+                   <div class="TP1price">
+                       ₹24,990
+                   </div>
+               </div>
+               <br>
+               <div class="TPCartDiv1">
+                   <button class="TPCart1">Add to cart</button>
+               </div> 
+             </div> 
+        </div>
+        <div class="b4divlast">    
+           <aside class="b4lastaside">Browse All Products</aside>
+           <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
 
-
+    <script src="https://kit.fontawesome.com/1f94d33050.js" crossorigin="anonymous">
+    </script>
 </body>
 </html>
