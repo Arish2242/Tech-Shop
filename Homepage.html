@@ -7,6 +7,11 @@
     
     <style>
         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
             background-color: rgb(31, 26, 26);
         }
         .Top{
@@ -245,6 +250,7 @@
             border:none;
             color: lightgrey;
             font-size: 20px;
+            background-color:rgb(31, 26, 26);
         }
         .TPbutton1:hover,.TPbutton2:hover,.TPbutton3:hover,.TPbutton4:hover,.TPbutton5:hover{ 
             background-color:red;
@@ -266,8 +272,7 @@
             border: 2px solid gray;
             margin:5px;
             padding:5px;
-            /* justify-self: center; */
-            
+            /* justify-self: center; */         
         }
         .TPimgdiv{
             text-align: center;
@@ -363,6 +368,41 @@
             font-size:18px;
             color:rgb(113, 116, 106);
         }
+        .body6{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            background-color: rgb(0, 0, 0);
+            z-index: 100000;
+            padding: 10px;
+        }
+        span{
+            color: lightgrey; 
+            font-size: 20px; 
+        }
+        .footerDiv1,.footerDiv2,.footerDiv3,.footerDiv4{
+            color:rgb(113, 116, 106);        }
+        footer input{
+            margin: 10px;
+            background-color:black ;
+            border:solid rgb(62, 58, 58);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer button{
+            margin: 10px;
+            background-color:rgb(226, 9, 9) ;
+            border:solid rgb(255, 14, 14);
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+        .footerDiv1{
+            width:500px;
+        }
+        a{
+            color:lightgray;
+        }
+
         
     </style>
 </head>
@@ -384,7 +424,7 @@
                     <form>
                        <h3>Hello!</h3>
                        <article>Access account and manage orders.</article><br>
-                       <a class="signupbutton" href="./SignUp page.html" target="_self">Login/Signup></a>
+                       <a class="signupbutton" href="./SignUp page.html" target="_self">Login/Signup</a><br><br>
                        <hr>
                        <aside>Please Login</aside>
                     </form>
@@ -870,10 +910,52 @@
             </div>
 
         </div>
-    </div>
-    <div class="body5">
-
-    </div>
+    </div><br><br><br>
+    <footer class="body6">
+          <div class="footerDiv1">
+            <span>Tech-Shop</span><br><br>
+            <p>Subscribe to our Email Alerts to receive early discount offers,and new products info.</p><br>
+            <form>
+                <input type="email" placeholder="Email Address*"/><br>
+                <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footerDiv2">
+            <span>Help</span><br><br>
+            <li type="none">
+               <ul>FAQs</ul><br>
+               <ul>Track Order</ul><br>
+               <ul>Cancel Order</ul><br>
+               <ul>Return Order</ul><br>
+               <ul>Warranty Info</ul><br>
+            </li>
+            </form>
+          </div>
+          <div class="footerDiv3">
+            <span>Policies</span><br><br>
+            <li type="none">
+               <ul>Return Policy</ul><br>
+               <ul>Security</ul><br>
+               <ul>Sitemap</ul><br>
+               <ul>Privacy Policy</ul><br>
+               <ul>Terms & Conditions</ul><br>
+            </li>
+            </form>
+          </div>
+          <div class="footerDiv4">
+            <span>Company</span><br><br>
+            <li type="none">
+               <ul>About Us</ul><br>
+               <ul>Contact Us</ul><br>
+               <ul>Service Centers</ul><br>
+               <ul>Carrers</ul><br>
+               <ul>Affiliates</ul>
+            </li>
+            </form>
+            
+          </div>
+          
+    </footer><hr>
 
 
 
