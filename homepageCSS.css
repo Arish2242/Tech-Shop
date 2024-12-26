@@ -43,7 +43,11 @@ body{
 }
 .cartcount{
     background-color: red;
-    border:circle;
+    border-radius: 100%;
+    padding: 3px;
+    font-size: 13px;
+    position: relative;
+    bottom: 9px;
 }
 .user{
     position: relative;

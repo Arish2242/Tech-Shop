@@ -4,6 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech_Shop_Cart</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: lightgrey;
+}
+body{
+    background-color: rgb(31, 26, 26);
+}
+.Top{
+        display: flex;
+        margin: 0px 2px 50px 1px;
+        background-color: #463f3f;
+        position: sticky;
+        top: 0px;
+        z-index: 10000;
+        height: 75px;
+}
+.heading{
+    color:lightgrey;
+    font-size:40px;
+    margin:20px;
+}
+.icons{
+    display: flex;
+    position:relative;
+    left:850px;
+    top:32px;
+    color:lightgrey;
+}
+.search{
+    position:relative;
+    left:90px;
+    font-size: 20px;  
+    height: 20px;
+    cursor: pointer; 
+}
+.cart{
+    position: relative;
+    left: 140px;
+    font-size: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.cartcount{
+    background-color: red;
+    border-radius: 100%;
+    padding: 3px;
+    font-size: 13px;
+    position: relative;
+    bottom: 9px;
+}
+.user{
+    position: relative;
+    left: 190px;
+    font-size: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+ .hide1{
+    visibility:hidden;
+    position: absolute;
+    top: 21px;
+    z-index: 1000;
+    right: 0px;
+    width: 223px; 
+    border: 2px solid gray;  
+}
+.user:hover  .hide1 {
+    opacity: 1;
+    visibility: visible; 
+}
+.CP1{
+    display: flex;
+}
+.pricediv{
+    display:flex;
+    font-size: 28px;
+    margin: 10px 5px 20px 0px;  
+ }
+.discountprice{
+    margin:7px 5px 7px 7px;
+}
+.price{
+    font-size: 23px;
+    margin:10px 8px 8px 8px;
+    text-decoration: line-through;
+    color:rgb(113, 116, 106);
+    font-weight: bold;
+}
+.fa-trash{
+    /* margin: 0px 20px 0px 600px; */
+    position: relative;
+    left: 80px;
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin: 5px 30px;
+}
+.countdiv{
+    border: 1px solid gray;
+    width: 107px;
+    border-radius: 5px;
+}
+.fa-minus,.fa-plus{
+     padding: 5px 10px;
+     background-color: rgb(21, 20, 20);
+     border-radius: 5px;
+}
+.countdiv span{
+    padding:5px 10px;
+    color: red;
+}
+.imgdisc{
+    font-size: 25px;
+}
+.Cartpagebody1{
+    display:flex;
+}
+.cartproducts{
+    background-color: #343030;
+}
+.cartsummary{
+    margin: 100px;
+}
+
+    </style>
 </head>
 <body>
     <div class="Top">
@@ -31,6 +160,85 @@
             </div>   
         </div>          
     </div><br><br><br><br><br>
+    <div class="Cartpagebody1">
+        <div class="cartproducts">
+           <div class="CP1">
+               <div>
+                  <img src="./images/products/jbl660nc-1.png">
+               </div>
+               <div>
+                   <span class="imgdisc">JBL Live 660NC Wireless Over-Ear NC Headphones</span>
+                    <i class="fa-solid fa-trash"></i>
+                    <div class="pricediv">
+                       <div class="discountprice">
+                           ₹9,999  
+                        </div>
+                        <div class="price">
+                            ₹14,999
+                        </div>
+                    </div>
+                    <div class="countdiv">
+                        <i class="fa-solid fa-minus"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div> 
+           </div>
+           <hr>
+           <br>
+           <div class="CP1">
+               <div>
+                  <img src="./images/products/jbl660nc-1.png">
+               </div>
+               <div>
+                   <span class="imgdisc">JBL Live 660NC Wireless Over-Ear NC Headphones</span>
+                    <i class="fa-solid fa-trash"></i>
+                    <div class="pricediv">
+                       <div class="discountprice">
+                           ₹9,999  
+                        </div>
+                        <div class="price">
+                            ₹14,999
+                        </div>
+                    </div>
+                    <div class="countdiv">
+                        <i class="fa-solid fa-minus"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div> 
+           </div>
+        </div>   
+        <div class="cartsummary">
+            <table>   
+                <thead>
+                    <tr>
+                        <th>Order Summary (4 Items)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Original Price</td>
+                        <td>₹22,978</td>
+                    </tr>
+                    <tr>
+                        <td>Discount</td>
+                        <td>₹10,132</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td>Total Price</td>
+                        <td>₹12,846</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
 
 
 
