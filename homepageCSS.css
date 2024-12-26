@@ -7,8 +7,13 @@ body{
     background-color: rgb(31, 26, 26);
 }
 .Top{
-    display:flex;
-    margin:10px 2px 50px 1px;
+        display: flex;
+        margin: 0px 2px 50px 1px;
+        background-color: #463f3f;
+        position: sticky;
+        top: 0px;
+        z-index: 10000;
+        height: 75px;
 }
 .heading{
     color:lightgrey;
@@ -27,7 +32,7 @@ body{
     left:90px;
     font-size: 20px;  
     height: 20px;
-    cursor: pointer;  
+    cursor: pointer; 
 }
 .cart{
     position: relative;
@@ -35,6 +40,10 @@ body{
     font-size: 20px;
     height: 20px;
     cursor: pointer;
+}
+.cartcount{
+    background-color: red;
+    border:circle;
 }
 .user{
     position: relative;
@@ -244,6 +253,7 @@ body{
     color: lightgrey;
     font-size: 20px;
     background-color:rgb(31, 26, 26);
+    padding:5px 10px 5px 10px;
 }
 .TPbutton1{
     background-color:red;
@@ -256,7 +266,6 @@ body{
     color:white;
     transition-delay:5ms;
     border-radius:2px;
-    padding:5px 10px 5px 10px;
 }
 .body4{
     display: grid;
