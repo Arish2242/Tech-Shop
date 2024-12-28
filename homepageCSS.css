@@ -284,6 +284,7 @@ body{
     border: 2px solid gray;
     margin:5px;
     padding:5px;
+    text-decoration: none;
     /* justify-self: center; */         
 }
 .TPimgdiv{
@@ -310,9 +311,13 @@ body{
     color:rgb(113, 116, 106);
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+}
 .TP1heading{
     font-size: 30px;
     color: lightgray;
+    text-decoration: none;
 }
 .TP1aside{
     color:rgb(113, 116, 106);
