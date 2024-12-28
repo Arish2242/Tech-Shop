@@ -122,6 +122,9 @@ img{
     background-color: #343030;
     width:65%;
     padding: 20px;
+    height:400px;
+    overflow-x: hidden; 
+  overflow-y: scroll;
 }
 .cartsummary{
     margin: 0px 10px;
@@ -134,14 +137,35 @@ img{
     position: relative;
     left: 150px;
 }
-.Csdiv2 ul li:last-of-type
+.Csdiv2 ul li:last-of-type,.offer
 {
     color: green;
 }
-.Csdiv2 ul li:nth-child("2")
+
 hr{
     width: 90%;
     margin: 5px 5%;
+}
+.totalprice{
+    display: flex;
+}
+.totalprice span{
+    font-size: 25px;
+}
+.totalprice span:nth-child(2){
+    position: relative;
+    left: 190px;
+}
+.checkoutbutton{
+    margin: 5px;
+    background-color: rgb(226, 9, 9);
+    border: solid rgb(255, 14, 14);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    width: 350px;
+    position: relative;
+    left: 40px;
 }
 .body6{
     display: grid;
