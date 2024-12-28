@@ -44,7 +44,7 @@ body{
 .cartcount{
     background-color: red;
     border-radius: 100%;
-    padding: 3px;
+    padding: 2px 5px;
     font-size: 13px;
     position: relative;
     bottom: 9px;
